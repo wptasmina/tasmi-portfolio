@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import { AiFillCloseCircle } from 'react-icons/ai';
 import { FaBars } from 'react-icons/fa';
+import { IoClose } from 'react-icons/io5';
 import { RiDownload2Line } from 'react-icons/ri';
 import { Link, NavLink } from 'react-router-dom';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItemClass = 'text-white font-medium text-lg transition duration-300 hover:text-purple-600  '
+  const navItemClass = 'text-white font-medium lg:text-lg text-sm transition duration-300 hover:border-b-3 hover:border-purple-400 '
 
   const navItems = (
     <>
        <li className={navItemClass}>
-        <NavLink to="/" className={navItemClass}>
-        Home
+        <NavLink to="/">
+          Home
         </NavLink>
       </li>
 
@@ -56,27 +56,23 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:block">
-          <ul className="flex space-x-6 text-lg">{navItems}</ul>
+          <ul className="flex lg:space-x-6 space-x-4 text-lg">{navItems}</ul>
         </div>
 
         {/* CV Download & Toggle Button */}
         <div className="flex gap-4 items-center">
           {/* Download Button */}
-          <button className="flex items-center cursor-pointer gap-2 text-white bg-gradient-to-r from-purple-700 to-[#341B66] px-5 py-2 rounded-lg hover:bg-purple-800 transition duration-300">
-            <RiDownload2Line className="text-2xl" />
+          <button className="flex items-center justify-center cursor-pointer lg:text-lg text-sm lg:gap-2 gap-1 text-white bg-gradient-to-r from-purple-700 to-[#341B66] px-3 py-2 rounded-lg hover:bg-purple-800 transition duration-300">
+            <RiDownload2Line className="lg:text-2xl text-lg" />
             Download CV
           </button>
 
           {/* Toggle Button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-            type="button"
-          >
+          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)} type="button">
             {isOpen ? (
-              <AiFillCloseCircle size={30} className="text-white" />
+              <IoClose size={30} className="border border-purple-600 text-white p-1 rounded-md transition duration-300" />
             ) : (
-              <FaBars size={30} className="text-white" />
+              <FaBars size={30} className="border border-purple-600 text-white p-1 rounded-md transition duration-300" />
             )}
           </button>
         </div>
@@ -84,7 +80,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="bg-purple-500 text-white w-full flex flex-col gap-y-3 py-4 px-6 md:hidden list-none">
+        <div className="bg-purple-800 transition duration-300 mt-4 text-white w-full flex flex-col gap-y-3 py-4 px-6 md:hidden list-none">
           {navItems}
         </div>
       )}
