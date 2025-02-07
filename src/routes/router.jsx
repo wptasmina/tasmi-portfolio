@@ -2,7 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 
 import MainLayouts from "../Layout/MainLayouts";
 import ErrorPage from "../page/ErrorPage";
-import Home from "../page/Home";
+import Home from "../Page/Home";
+
 
 
 

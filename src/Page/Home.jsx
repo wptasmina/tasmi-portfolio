@@ -9,7 +9,6 @@ export default function Home() {
         <title>Tasmina || Home</title>
     </Helmet>
     
-    https://loading.io/asset/774416
     
     </>
   )
