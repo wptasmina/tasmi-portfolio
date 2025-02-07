@@ -10,26 +10,3 @@ html{
 body{
     font-family: "Roboto Condensed", serif;
 }
- /* Nambar  */
- .menu-item{
-    position: relative;
-    cursor: pointer;
- }
-
- .menu-item::before {
-    content: " ";
-    width: 2rem;
-    height: 0.2rem;
-    background-color: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%) ;
-    border-radius: 0.5rem; 
-    position: absolute;
-    bottom: -0.6rem;
-    opacity: 0;
-    transform: translateX(-1.5rem);
-    transform: all 0.3s ease;
- }
- .menu-item:hover::before{
-    width: 100%;
-    opacity: 1;
-    transform: translateX(0);
- }
