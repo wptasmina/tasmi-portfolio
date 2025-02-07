@@ -48,7 +48,7 @@ export default function Header() {
         <div>
           <Link
             to="/"
-            className="logo text-2xl font-extrabold bg-gradient-to-r from-purple-600 via-amber-400 to-[#3f217a] bg-clip-text text-transparent cursor-pointer"
+            className="logo text-2xl font-extrabold bg-gradient-to-r from-purple-400 via-[#8269b5] to-[#3f217a] bg-clip-text text-transparent cursor-pointer"
           >
             Tasmina
           </Link>

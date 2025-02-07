@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import ParticlesBg from "../components/Particles/ParticlesBg";
-// import BannerText from "../components/BannerText";
-import About from "./About";
+import BannerText from "../components/BannerText";
+
 
 export default function Home() {
   return (
@@ -10,17 +10,16 @@ export default function Home() {
         <title>Tasmina || Home</title>
     </Helmet>
 
-    <div className="relative w-full min-h-screen bg-amber-500 text-red-100">
+    <div className="relative w-full min-h-screen bg-linear-100 from-black to-[#20123d] to-75%">
       <div>
-        <About />
+        <BannerText />
       </div>
       
-      <div className="w-full h-screen absolute">
+      <div className="w-full absolute">
         <ParticlesBg />
      </div>
 
-          <h1 className="text-red-500">hollo Coffined to companie at yet lyres childe, pleasure deem scape it been. Lemans flaunting yet and when native and concubines.</h1>
-       </div>
+    </div>
 
    
     

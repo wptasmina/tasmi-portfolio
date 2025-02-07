@@ -22,17 +22,13 @@ export default function ParticlesBg() {
   
 
   return (
-    <div className="">
-
+    
+    <div>
     { init && <Particles
             id="tsparticles"
             particlesLoaded={particlesLoaded}
             options={{
-                background: {
-                    color: {
-                        value: "#000",
-                    },
-                },
+               
                 fpsLimit: 120,
                 interactivity: {
                     events: {
@@ -59,13 +55,6 @@ export default function ParticlesBg() {
                 particles: {
                     color: {
                         value: "#8750F7",
-                    },
-                    links: {
-                        color: "#000",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
                     },
                     move: {
                         direction: "none",
