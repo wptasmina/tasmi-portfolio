@@ -18,11 +18,7 @@ export default function Home() {
       <div className="w-full absolute">
         <ParticlesBg />
      </div>
-
     </div>
-
-   
-    
     </>
   )
 }

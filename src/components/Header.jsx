@@ -7,7 +7,7 @@ import { Link, NavLink } from 'react-router-dom';
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItemClass = 'text-white font-medium lg:text-lg text-sm transition duration-300 hover:border-b-3 hover:border-purple-400 '
+  const navItemClass = 'text-white font-medium lg:text-lg text-sm transition duration-300 hover:text-purple-500'
 
   const navItems = (
     <>

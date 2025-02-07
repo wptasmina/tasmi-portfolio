@@ -1,5 +1,7 @@
+
 import heroImg from '../assets/model.png'
 import { TypeAnimation } from 'react-type-animation';
+import SocileIcon from './SocileIcon';
 
 export default function BannerText() {
   return (
@@ -29,7 +31,10 @@ export default function BannerText() {
       style={{ fontSize: '2em', display: 'inline-block' }}
       repeat={Infinity}
     />
-      </div>
+
+      <SocileIcon />
+      
+    </div>
 
       <div className='block items-center mx-auto'>
         <img src={heroImg} className='w-full items-end ring-0' alt="avata" />

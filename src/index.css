@@ -3,10 +3,11 @@
 @import "tailwindcss";
 
 
-html{
+/* html{
     scroll-behavior: smooth;
-}
+} */
 
 body{
     font-family: "Roboto Condensed", serif;
 }
+
