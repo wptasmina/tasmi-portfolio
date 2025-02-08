@@ -10,14 +10,13 @@ export default function Portfolio() {
         <title>Tasmina || Portfolio</title>
     </Helmet>
 
-    <div className='w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d]'>
+    <div className='w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d] pb-4'>
+      <h2  data-aos="fade-up"
+     data-aos-duration="3000" className='text-center text-4xl pt-8 bg-gradient-to-r from-purple-400 to-[#341B66] bg-clip-text text-transparent font-bold'>My Portfolio</h2>
+
       <div className=''>
-        <h2  data-aos="fade-up"
-     data-aos-duration="3000" className='text-center text-4xl pt-20 transition duration-300 bg-gradient-to-r from-purple-400 to-[#341B66] bg-clip-text text-transparent font-bold'>My Portfolio</h2>
-      </div>
-      <div className=''>
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-20 mx-auto">
+<section class="text-gray-600 ">
+  <div class="container px-5 py-10 mx-auto">
     <div class="flex flex-wrap -m-4">
 
     <div data-aos="fade-down"

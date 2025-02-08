@@ -17,13 +17,13 @@ export default function BannerText() {
       sequence={[
 
         "I Am a Parofasonal Programmer",
-        1000, 
+        3000, 
         "I Am a Parofasonal Front-End developer",
-        1000,
+        3000,
         "I Am a Parofasonal Web Designer",
-        1000,
+        3000,
         "I Am a Parofasonal MERN-Stack Developer",
-        1000
+        3000
       ]}
       wrapper="span"
       speed={50}
@@ -37,7 +37,7 @@ export default function BannerText() {
 
       <div className='block items-center mx-auto'>
         <img  data-aos="fade-up"
-     data-aos-duration="3000" src={heroImg} className='w-full items-end ring-0' alt="avata" />
+     data-aos-duration="2000" src={heroImg} className='w-full items-end ring-0' alt="avata" />
       </div>
 
     </div>
