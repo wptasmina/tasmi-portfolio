@@ -4,8 +4,6 @@ import MainLayouts from "../Layout/MainLayouts";
 import ErrorPage from "../page/ErrorPage";
 import Home from "../Page/Home";
 import About from "../Page/About";
-import Services from "../Page/Services";
-import Experience from "../Page/Experience";
 import Portfolio from "../Page/Portfolio";
 import Skills from "../Page/Skills";
 import Contact from "../Page/Contact";
@@ -26,14 +24,6 @@ export const router = createBrowserRouter([
       {
         path: "/about-me",
         element: <About />,
-      },
-      {
-        path: "/services",
-        element: <Services />,
-      },
-      {
-        path: "/experience",
-        element: <Experience />,
       },
       {
         path: "/portfolio",

@@ -22,14 +22,6 @@ export default function Header() {
       </li>
 
       <li className={navItemClass}>
-        <NavLink to="/services">Services</NavLink>
-      </li>
-
-      {/* <li className={navItemClass}>
-        <NavLink to="/experience">Experience</NavLink>
-      </li> */}
-
-      <li className={navItemClass}>
         <NavLink to="/portfolio">Portfolio</NavLink>
       </li>
       <li className={navItemClass}>
