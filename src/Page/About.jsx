@@ -9,9 +9,9 @@ export default function About() {
         <title>Tasmina || About</title>
     </Helmet>
 
-    <div className='w-full min-h-screen bg-gradient-to-tr  from-black to-[#20123d] to-75%'>
+    <div className='w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d] to-75%'>
 
-    <div className='w-10/12 mx-6 flex flex-col justify-center items-center py-10'>
+    <div className='w-10/12 mx-6 flex flex-col justify-center items-center py-16'>
      <p className='text-gray-200 font-medium text-center sm:text-xl text-md mb-1 '>
         Introduction
       </p>
@@ -21,7 +21,7 @@ export default function About() {
 
     </div>
 
-    <div className='w-10/12 mx-auto flex flex-col md:flex-row justify-center items-center gap-20 md:mt-10'>
+    <div className='w-10/12 mx-auto flex flex-col lg:flex-row justify-center items-center gap-20 md:mt-6'>
 
       <div className='w-70 sm:w-96 max-w-none rounded-2xl flex justify-center items-center'>
         <img src={ aboutImg} alt="avata" className='w-full overflow-hidden rounded-2xl object-cover' />
