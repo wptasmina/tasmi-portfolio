@@ -36,7 +36,8 @@ export default function BannerText() {
     </div>
 
       <div className='block items-center mx-auto'>
-        <img src={heroImg} className='w-full items-end ring-0' alt="avata" />
+        <img  data-aos="fade-up"
+     data-aos-duration="3000" src={heroImg} className='w-full items-end ring-0' alt="avata" />
       </div>
 
     </div>

@@ -22,7 +22,8 @@ export default function Skills() {
     </div>
     <div class="flex flex-wrap -m-4 bg-blue-black/90 rounded-2xl px-2 py-8 backdrop-blur-3xl">
 
-      <div data-aos="fade-up-right" class="xl:w-1/3 md:w-1/2 p-4 duration-300 ">
+      <div data-aos="fade-right"
+    data-aos-duration="3000" class="xl:w-1/3 md:w-1/2 p-4 duration-300 ">
         <div class="border border-gray-200 p-6 rounded-lg">
           <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
           <AiFillHtml5 className="text-2xl" />
@@ -32,7 +33,7 @@ export default function Skills() {
         </div>
       </div>
 
-      <div data-aos="fade-up-right" class="xl:w-1/3 md:w-1/2 p-4 duration-300">
+      <div data-aos="fade-up-right" data-aos-duration="2000" class="xl:w-1/3 md:w-1/2 p-4 duration-300">
         <div class="border border-gray-200 p-6 rounded-lg">
           <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
           <AiOutlineJavaScript className="text-2xl" />
@@ -41,7 +42,8 @@ export default function Skills() {
           <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
         </div>
       </div>
-      <div data-aos="fade-up-right" class="xl:w-1/3 md:w-1/2 p-4 duration-300">
+      <div data-aos="fade-right"
+    data-aos-duration="3000" class="xl:w-1/3 md:w-1/2 p-4 duration-300">
         <div class="border border-gray-200 p-6 rounded-lg">
           <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
           <IoLogoReact className="text-2xl" />
@@ -51,7 +53,8 @@ export default function Skills() {
         </div>
       </div>
 
-      <div data-aos="fade-left" class="xl:w-1/3 md:w-1/2 p-4 duration-300">
+      <div data-aos="fade-left"
+    data-aos-duration="2000" class="xl:w-1/3 md:w-1/2 p-4 duration-300">
         <div class="border border-gray-200 p-6 rounded-lg">
           <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
           <IoLogoNodejs className="text-2xl" />
@@ -60,7 +63,8 @@ export default function Skills() {
           <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
         </div>
       </div>
-      <div data-aos="fade-left" class="xl:w-1/3 md:w-1/2 p-4 duration-300">
+      <div data-aos="fade-up"
+     data-aos-duration="3000" class="xl:w-1/3 md:w-1/2 p-4 duration-300">
         <div class="border border-gray-200 p-6 rounded-lg">
           <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
           <SiMongodb className="text-2xl" />
@@ -69,7 +73,8 @@ export default function Skills() {
           <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
         </div>
       </div>
-      <div data-aos="fade-left" class="xl:w-1/3 md:w-1/2 p-4 duration-300">
+      <div data-aos="fade-left"
+    data-aos-duration="2000" class="xl:w-1/3 md:w-1/2 p-4 duration-300">
         <div class="border border-gray-200 p-6 rounded-lg">
           <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
           <RiTailwindCssFill className="text-2xl" />

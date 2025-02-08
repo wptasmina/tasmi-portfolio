@@ -12,7 +12,8 @@ export default function Portfolio() {
 
     <div className='w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d]'>
       <div className=''>
-        <h2  data-aos="fade-up" className='text-center text-4xl pt-20 transition duration-300 bg-gradient-to-r from-purple-400 to-[#341B66] bg-clip-text text-transparent font-bold'>My Portfolio</h2>
+        <h2  data-aos="fade-up"
+     data-aos-duration="3000" className='text-center text-4xl pt-20 transition duration-300 bg-gradient-to-r from-purple-400 to-[#341B66] bg-clip-text text-transparent font-bold'>My Portfolio</h2>
       </div>
       <div className=''>
 <section class="text-gray-600 body-font">
@@ -45,7 +46,7 @@ export default function Portfolio() {
               <span class="text-gray-400 inline-flex items-center leading-none text-sm">
                 <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                   <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
+                </svg>10
               </span>
             </div>
           </div>
@@ -76,7 +77,7 @@ export default function Portfolio() {
               <span class="text-gray-400 inline-flex items-center leading-none text-sm">
                 <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                   <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
+                </svg>8
               </span>
             </div>
           </div>
@@ -108,7 +109,7 @@ export default function Portfolio() {
               <span class="text-gray-400 inline-flex items-center leading-none text-sm">
                 <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                   <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
+                </svg>13
               </span>
             </div>
           </div>
