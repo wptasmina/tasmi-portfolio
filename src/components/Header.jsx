@@ -22,12 +22,12 @@ export default function Header() {
       </li>
 
       <li className={navItemClass}>
-        <NavLink to="/services"> Services</NavLink>
+        <NavLink to="/services">Services</NavLink>
       </li>
 
-      <li className={navItemClass}>
-        <NavLink to="/experience"> Work Experience</NavLink>
-      </li>
+      {/* <li className={navItemClass}>
+        <NavLink to="/experience">Experience</NavLink>
+      </li> */}
 
       <li className={navItemClass}>
         <NavLink to="/portfolio">Portfolio</NavLink>
@@ -36,7 +36,7 @@ export default function Header() {
         <NavLink to="/skills">Skills</NavLink>
       </li>
       <li className={navItemClass}>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/contact">Contact Me</NavLink>
       </li>
     </>
   );

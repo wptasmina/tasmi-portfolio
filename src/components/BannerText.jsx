@@ -10,7 +10,6 @@ export default function BannerText() {
       
       <div className='bg-black py-10 md:text-4xl w-full text-md font-extrabold bg-gradient-to-r from-purple-400 via-[#8047f3] to-[#311960] bg-clip-text text-transparent '>
         <div className='mb-2'>
-            <p className='text-gray-100 font-medium sm:text-md text-sm mb-1'>Hi, I'm Tasmina</p>
             <h2 className='font-medium  text-md text-gray-300'>WELCOME TO MY WEBSITE</h2>
         </div>
 
