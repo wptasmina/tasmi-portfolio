@@ -12,10 +12,10 @@ export default function About() {
     <div className='w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d] to-75%'>
 
     <div className='w-10/12 mx-6 flex flex-col justify-center items-center py-16'>
-     <p className='text-gray-200 font-medium text-center sm:text-xl text-md mb-1 '>
+     <p data-aos="fade-up" className='text-gray-200 font-medium duration-300 transition-all text-center sm:text-xl text-md mb-1 '>
         Introduction
       </p>
-      <h2 className=' bg-gradient-to-r from-purple-400 to-[#341B66] bg-clip-text text-transparent font-bold text-center sm:text-6xl text-2xl'>
+      <h2 data-aos="fade-up" className=' bg-gradient-to-r from-purple-400 to-[#341B66] bg-clip-text text-transparent font-bold duration-300 transition-all text-center sm:text-6xl text-2xl'>
        About Me
       </h2>
 
@@ -34,11 +34,13 @@ export default function About() {
 
               That same year, I embarked on my journey into programming, quickly developing a strong expertise in web development and problem-solving. Today, I'm a Full-Stack Developer proficient in HTML, CSS, Bootstrap, Tailwind, JavaScript, React, Node.js, MongoDB, and Next.js.
         </p>
-        <div className=''>
-           <button className="flex items-center justify-center cursor-pointer mt-8 lg:text-lg text-sm lg:gap-2 gap-1 text-white bg-gradient-to-r from-purple-700 to-[#341B66] px-3 py-2 rounded-lg hover:bg-purple-800 transition duration-300">
-            <RiDownload2Line className="lg:text-2xl text-lg" />
-              Download CV
-            </button>
+        <div className='bg-transparent'>
+           <button className="cursor-pointer mt-10 lg:text-lg text-sm lg:gap-2 gap-1 text-white bg-gradient-to-r from-purple-700 to-[#341B66] px-4 py-2 rounded-lg hover:bg-purple-800 transition duration-300">
+            <a href="/resume.pdf" className='flex gap-2 cursor-pointer '>
+                <RiDownload2Line className="lg:text-2xl text-lg " />
+                Download CV
+            </a>
+          </button>
         </div>
       </div>
     </div>

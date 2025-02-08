@@ -40,7 +40,7 @@ export default function Header() {
         <div>
           <Link
             to="/"
-            className="logo text-2xl font-extrabold bg-gradient-to-r from-purple-400 via-[#8269b5] to-[#3f217a] bg-clip-text text-transparent cursor-pointer"
+            className="logo text-2xl font-extrabold bg-gradient-to-r from-purple-400 via-[#8269b5] to-[#3f217a] bg-clip-text text-transparent cursor-pointer hover:text-purple-800"
           >
             Tasmina
           </Link>
@@ -54,9 +54,11 @@ export default function Header() {
         {/* CV Download & Toggle Button */}
         <div className="flex gap-4 items-center">
           {/* Download Button */}
-          <button className="flex items-center justify-center cursor-pointer lg:text-lg text-sm lg:gap-2 gap-1 text-white bg-gradient-to-r from-purple-700 to-[#341B66] px-3 py-2 rounded-lg hover:bg-purple-800 transition duration-300">
-            <RiDownload2Line className="lg:text-2xl text-lg" />
-            Download CV
+          <button className="download cursor-pointer lg:text-lg text-sm lg:gap-2 gap-1 text-white bg-gradient-to-r from-purple-700 to-[#341B66] px-3 py-2 rounded-lg hover:bg-purple-800 transition duration-300">
+          <a href="/resume.pdf" className='flex gap-2 cursor-pointer '>
+                <RiDownload2Line className="lg:text-2xl text-lg " />
+                Download CV
+            </a>
           </button>
 
           {/* Toggle Button */}

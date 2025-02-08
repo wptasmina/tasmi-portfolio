@@ -1,13 +1,18 @@
 import React from 'react'
 import messageLottieData from '../assets/message.json' 
 import Lottie from 'lottie-react'
+import { Helmet } from 'react-helmet'
 
 export default function Contact() {
   return (
     <>
+    <Helmet>
+        <title>Tasmina || Contact </title>
+    </Helmet>
+
     <div className='w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d] to-75%'>
       <div className=' w-10/11 mx-auto pt-16 pb-10'>
-        <h2 className='bg-gradient-to-br from-purple-600 to-[#6642ad] bg-clip-text text-transparent font-bold text-center sm:text-6xl text-2xl'>Contact With Me</h2>
+        <h2  data-aos="fade-up" className='bg-gradient-to-br from-purple-600 to-[#6642ad] duration-500 bg-clip-text text-transparent font-bold text-center sm:text-6xl text-2xl'>Contact With Me</h2>
 
         <p className='text-gray-100 text-center font-medium md:text-xl text-md mt-2'>
           I'd love hear from your! If yor have any questions, commenta, or feedBack, Please use the form below.

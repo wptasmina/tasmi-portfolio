@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet'
 import img1 from '../assets/img (1).jpg'
 import img2 from '../assets/img (2).jpg'
 import img3 from '../assets/img (3).webp'
@@ -5,16 +6,22 @@ import img3 from '../assets/img (3).webp'
 export default function Portfolio() {
   return (
     <>
+    <Helmet>
+        <title>Tasmina || Portfolio</title>
+    </Helmet>
+
     <div className='w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d]'>
       <div className=''>
-        <h2 className='text-gray-100 text-center text-4xl pt-20'>My Portfolio</h2>
+        <h2  data-aos="fade-up" className='text-center text-4xl pt-20 transition duration-300 bg-gradient-to-r from-purple-400 to-[#341B66] bg-clip-text text-transparent font-bold'>My Portfolio</h2>
       </div>
       <div className=''>
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-20 mx-auto">
     <div class="flex flex-wrap -m-4">
 
-    <div class="p-4 md:w-1/3">
+    <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" class="p-4 md:w-1/3">
         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={img1} alt="blog" />
           <div class="p-6">
@@ -44,7 +51,9 @@ export default function Portfolio() {
           </div>
         </div>
     </div>
-    <div class="p-4 md:w-1/3">
+    <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" class="p-4 md:w-1/3">
         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={img2} alt="image" />
           <div class="p-6">
@@ -73,7 +82,9 @@ export default function Portfolio() {
           </div>
         </div>
     </div>
-    <div class="p-4 md:w-1/3">
+    <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" class="p-4 md:w-1/3">
         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={img3} alt="image" />
           <div class="p-6">
