@@ -1,67 +1,70 @@
-import { RiDownload2Line } from 'react-icons/ri'
-import aboutImg  from '../assets/about.jpg'
-import { Helmet } from 'react-helmet'
-import { MdOutlineArrowOutward } from 'react-icons/md'
-import Contact from './Contact';
+import { RiDownload2Line } from 'react-icons/ri';
+import { MdOutlineArrowOutward } from 'react-icons/md';
+import aboutImg from '../assets/about.jpg';
+import { Helmet } from 'react-helmet';
 
 export default function About() {
   return (
-   <>
-    <Helmet>
+    <>
+      <Helmet>
         <title>Tasmina || About</title>
-    </Helmet>
+      </Helmet>
 
-    <div className='w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d] to-75% pb-10'>
-
-    <div className='w-10/12 mx-6 flex flex-col justify-center items-center py-16'>
-     <p  data-aos="fade-up"
-     data-aos-duration="3000" className='text-gray-200 font-medium duration-300 transition-all text-center sm:text-xl text-md mb-1 '>
-        Introduction
-      </p>
-      <h2 data-aos="fade-up"
-     data-aos-duration="3000" className=' bg-gradient-to-r from-purple-400 to-[#341B66] bg-clip-text text-transparent font-bold duration-300 transition-all text-center sm:text-6xl text-2xl'>
-       About Me
-      </h2>
-
-    </div>
-
-    <div className='w-11/12 mx-auto flex flex-col md:flex-row justify-center items-center gap-16'>
-
-      <div data-aos="fade-right"
-    data-aos-duration="2000" className='w-70 sm:w-96 max-w-none rounded-2xl flex justify-center items-center'>
-        <img src={ aboutImg} alt="avata" className='w-full overflow-hidden rounded-2xl object-cover' />
-      </div>
-
-      <div className='sm:p-4 p-2 flex-1'>
-        <h4 data-aos="fade-left"
-    data-aos-duration="2000" className='text-gray-200 text-lg font-bold pb-2 max-w-2xl'> Hi, I’m Tasmina!</h4>
-        <p data-aos="fade-left"
-    data-aos-duration="2000" className='text-gray-400 text-md font-medium sm:text-xl mb-1'>
-              I’m a Front-end expertise passionate about crafting beautiful, responsive, and user-friendly web experiences. My journey into technology began in 2019 when I started learning basic computer skills. After completing my Higher Secondary Education, I completed my Bachelor of Arts (BA) from Murari Chand College (MC College), Sylhet, in 2022.
-
-              That same year, I embarked on my journey into programming, quickly developing a strong expertise in web development and problem-solving. Today, I'm a Full-Stack Developer proficient in HTML, CSS, Bootstrap, Tailwind, JavaScript, React, Node.js, MongoDB, and Next.js.
-        </p>
-
-        {/* button  */}
-        <div className='bg-transparent flex gap-4'>
-           <button className="cursor-pointer mt-10 bg-gradient-to-r from-purple-700 to-[#341B66] px-4 py-2 rounded-lg hover:bg-purple-800 transition duration-300">
-            <a href="/resume.pdf" className='flex gap-2 cursor-pointer lg:text-lg text-sm  text-white '>
-                <RiDownload2Line className="lg:text-2xl text-lg " />
-                Download CV
-            </a>
-          </button>
-           <button className="cursor-pointer mt-10 lg:text-lg text-sm  text-white bg-gradient-to-r from-purple-700 to-[#341B66] px-4 py-2 rounded-lg hover:bg-purple-800 transition duration-300">
-            <a href="https://web.whatsapp.com/+8801581543966" className='flex gap-2 cursor-pointer '>
-                Contact
-                <MdOutlineArrowOutward className="lg:text-2xl text-lg " />
-            </a>
-          </button>
+      <div className="w-full min-h-screen bg-gradient-to-br from-black via-[#1a0e30] to-[#120b24] flex flex-col items-center md:pb-10">
+        
+        {/* Heading Section */}
+        <div className="w-11/12 text-center py-10">
+          <p className="text-gray-300 font-medium text-lg mb-2 uppercase tracking-widest" data-aos="fade-up" data-aos-duration="2000">
+            Introduction
+          </p>
+          <h2 className="text-transparent bg-gradient-to-r from-purple-400 to-[#5c0d94] bg-clip-text text-5xl font-bold" data-aos="fade-up" data-aos-duration="2000">
+            About Me
+          </h2>
         </div>
-      </div>
-    </div>
 
-    </div>
-   
-   </>
-  )
+        {/* Content Section */}
+        <div className="w-11/12 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 pb-10">
+
+          {/* Image Section */}
+          <div data-aos="fade-right" data-aos-duration="2000" className="relative md:w-1/3 sm:w-96">
+            <div className="absolute top-4 left-4 w-full h-full bg-purple-800 rounded-2xl transform rotate-3"></div>
+            <img src={aboutImg} alt="avatar" className="relative w-full rounded-2xl object-cover shadow-lg" />
+          </div>
+
+          {/* Text Content */}
+          <div className="flex-1 text-gray-300 p-6" data-aos="fade-left" data-aos-duration="2000">
+            <h4 className="text-lg font-bold mb-4">Hi, I’m Tasmina!</h4>
+            <p className="text-gray-400 text-md leading-relaxed">
+              I’m a passionate Front-end Developer focused on crafting intuitive, user-friendly web experiences. 
+              My journey into tech began in 2019, and since then, I’ve honed my skills in modern web development. 
+              I specialize in HTML, CSS, Bootstrap, Tailwind, JavaScript, React, Node.js, MongoDB, and Next.js.
+            </p>
+
+            {/* Skills */}
+            <div className="mt-6 grid sm:grid-cols-3 grid-cols-2 gap-3">
+              {['JavaScript', 'React.js', 'Redux', 'Next.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'].map(skill => (
+                <span key={skill} className="px-3 py-1 bg-[#2a1f44] text-purple-400 border border-purple-500 rounded-lg text-xs font-medium shadow-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+
+            {/* Buttons */}
+            <div className="mt-10 flex gap-4">
+              <a href="/resume.pdf" className="flex items-center gap-2 md:px-4 px-3 py-2 bg-gradient-to-r from-purple-600 to-[#6A0DAD] text-white rounded-lg text-sm font-medium transition duration-300 hover:scale-105 shadow-md">
+                <RiDownload2Line className="text-lg" />
+                Download CV
+              </a>
+              <a href="https://web.whatsapp.com/+8801581543966" className="flex items-center gap-2 md:px-4 px-3 py-2 bg-transparent border border-purple-600 text-purple-400 rounded-lg text-sm font-medium transition duration-300 hover:bg-purple-600 hover:text-white hover:scale-105 shadow-md">
+                Contact
+                <MdOutlineArrowOutward className="text-lg" />
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </>
+  );
 }

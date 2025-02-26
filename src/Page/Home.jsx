@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-// import ParticlesBg from "../components/Particles/ParticlesBg";
+import ParticlesBg from "../components/Particles/ParticlesBg";
 import BannerText from "../components/BannerText";
 
 
@@ -15,7 +15,7 @@ export default function Home() {
         <BannerText />
       </div>
       <div className="w-full">
-        {/* <ParticlesBg /> */}
+        <ParticlesBg />
      </div>
      
     </div>
