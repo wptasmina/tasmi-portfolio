@@ -22,10 +22,10 @@ export default function Header() {
       </li>
 
       <li className={navItemClass}>
-        <NavLink to="/portfolio">Portfolio</NavLink>
+        <NavLink to="/skills">Skills</NavLink>
       </li>
       <li className={navItemClass}>
-        <NavLink to="/skills">Skills</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
       </li>
       <li className={navItemClass}>
         <NavLink to="/contact">Contact Me</NavLink>

@@ -2,13 +2,15 @@
 import heroImg from '../assets/model.png'
 import { TypeAnimation } from 'react-type-animation';
 import SocileIcon from './SocileIcon';
+// import ParticlesBg from './Particles/ParticlesBg';
 
 export default function BannerText() {
   return (
     <>
+    
     <div className='w-11/12 mx-auto pt-15 grid md:grid-cols-2 grid-cols-1 justify-center items-center gap-8'>
       
-      <div className='bg-black py-10 md:text-4xl w-full text-md font-extrabold bg-gradient-to-r from-purple-400 via-[#8047f3] to-[#311960] bg-clip-text text-transparent '>
+      <div className='bg-black py-10 md:text-3xl w-full text-md font-extrabold bg-gradient-to-r from-purple-400 via-[#8047f3] to-[#311960] bg-clip-text text-transparent '>
         <div className='mb-2'>
             <h2 className='font-medium  text-md text-gray-300'>WELCOME TO MY WEBSITE</h2>
         </div>
@@ -37,7 +39,7 @@ export default function BannerText() {
 
       <div className='block items-center mx-auto'>
         <img  data-aos="fade-up"
-     data-aos-duration="2000" src={heroImg} className='w-full items-end ring-0' alt="avata" />
+          data-aos-duration="2000" src={heroImg} className='w-full items-end ring-0' alt="avata" />
       </div>
 
     </div>

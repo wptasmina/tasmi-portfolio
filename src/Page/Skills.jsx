@@ -13,7 +13,7 @@ export default function Skills() {
         <title>Tasmina || Skills</title>
     </Helmet>
 
-<div className=' w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d] to-75%'>
+<div className=' w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d] to-75% pb-12'>
   <section class="text-gray-600 w-11/12 mx-auto">
   <div class="container px-5  mx-auto">
     <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
