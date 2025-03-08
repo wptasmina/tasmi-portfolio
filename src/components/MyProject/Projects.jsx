@@ -13,9 +13,7 @@ const Projects = () => {
     >
       <div className="w-11/12 mx-auto">
       <div className="flex justify-center items-center text-center">
-        <Title
-          des="My Projects"
-        />
+        <Title des="My Projects" />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-6 xl:gap-10">
         <ProjectsCard

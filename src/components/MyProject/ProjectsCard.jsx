@@ -1,10 +1,9 @@
-import React from 'react'
 import { BsGithub } from "react-icons/bs";
 import { FaGlobe } from "react-icons/fa";
 import { TbListDetails } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 
-const ProjectsCard = ({ title, des, src,link, view }) => {
+const ProjectsCard = ({ title, des, src, link, view }) => {
   return (
     <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#262a2e] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000">
       <div className="w-full h-[80%] overflow-hidden rounded-lg">
@@ -41,7 +40,7 @@ const ProjectsCard = ({ title, des, src,link, view }) => {
               </span>
             </div>
           </div>
-          <p className="text-sm tracking-wide mt-3 hover:text-gray-100 duration-300">
+          <p className="text-sm tracking-wide lg:text-gray-600 text-gray-500 mt-3 hover:text-gray-100 duration-300">
             {des}
           </p>
 

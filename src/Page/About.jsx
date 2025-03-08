@@ -2,8 +2,20 @@ import { RiDownload2Line } from 'react-icons/ri';
 import { MdOutlineArrowOutward } from 'react-icons/md';
 import aboutImg from '../assets/about.jpg';
 import { Helmet } from 'react-helmet';
+import { useEffect, useState } from 'react';
+import Skills from '../components/Skills';
 
 export default function About() {
+  const [skills, setSkills] = useState([])
+
+  useEffect(()=>{
+    fetch('skill.json')
+    .then(res=>res.json())
+    .then(data=> setSkills(data))
+    
+    // setSkills(data)
+  },[])
+
   return (
     <>
       <Helmet>
@@ -11,7 +23,7 @@ export default function About() {
       </Helmet>
 
       <div className="w-full min-h-screen bg-gradient-to-br from-black via-[#1a0e30] to-[#120b24] flex flex-col items-center md:pb-10">
-        
+
         {/* Heading Section */}
         <div className="w-11/12 text-center py-10">
           <p className="text-gray-300 font-medium text-lg mb-2 uppercase tracking-widest" data-aos="fade-up" data-aos-duration="2000">
@@ -32,21 +44,24 @@ export default function About() {
           </div>
 
           {/* Text Content */}
-          <div className="flex-1 text-gray-300 p-6" data-aos="fade-left" data-aos-duration="2000">
+          <div className="flex-1 text-gray-300 md:p-6 p-2" data-aos="fade-left" data-aos-duration="2000">
             <h4 className="text-lg font-bold mb-4">Hi, I’m Tasmina!</h4>
             <p className="text-gray-400 text-md leading-relaxed">
-              I’m a passionate Front-end Developer focused on crafting intuitive, user-friendly web experiences. 
-              My journey into tech began in 2019, and since then, I’ve honed my skills in modern web development. 
+              "I completed my Bachelor of Social Science (BSS) from MC College in 2022.
+              My passion for technology and curiosity about computer science principles led
+              me to pursue web development as a career."
+              I’m a passionate Front-end Developer focused on crafting intuitive, user-friendly web experiences.
+              My journey into tech began in 2019, and since then, I’ve honed my skills in modern web development.
               I specialize in HTML, CSS, Bootstrap, Tailwind, JavaScript, React, Node.js, MongoDB, and Next.js.
             </p>
 
             {/* Skills */}
             <div className="mt-6 grid sm:grid-cols-3 grid-cols-2 gap-3">
-              {['JavaScript', 'React.js', 'Redux', 'Next.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'].map(skill => (
-                <span key={skill} className="px-3 py-1 bg-[#2a1f44] text-purple-400 border border-purple-500 rounded-lg text-xs font-medium shadow-sm">
-                  {skill}
-                </span>
-              ))}
+            {
+              skills.map(skill => 
+                <Skills key={skill.id} skill={skill}></Skills>
+            )
+            }
             </div>
 
             {/* Buttons */}

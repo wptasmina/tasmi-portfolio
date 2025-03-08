@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "JavaScript",
+      "img": "https://i.ibb.co.com/YF6RyN07/image-removebg-preview-1.png"
+    },
+    {
+      "id": 2,
+      "name": "React.js",
+      "img": "https://i.ibb.co.com/qLrxDhDN/React-js.png"
+    },
+    {
+      "id": 3,
+      "name": "Redux",
+      "img": "https://i.ibb.co.com/RGwspHGy/Redux.png"
+    },
+    {
+      "id": 4,
+      "name": "Next.js",
+      "img": "https://i.ibb.co.com/cXFLqZ0v/nextjs.png"
+    },
+    {
+      "id": 5,
+      "name": "Node.js",
+      "img": "https://i.ibb.co.com/pjstnXFq/nodejs.webp"
+    },
+    {
+      "id": 6,
+      "name": "Express.js",
+      "img": "https://i.ibb.co.com/n8MwSydR/express-js1.png"
+    },
+    {
+      "id": 7,
+      "name": "MongoDB",
+      "img": "https://i.ibb.co.com/HLhWkrps/Mongodb-PNG-Free-Image.png"
+    },
+    {
+      "id": 8,
+      "name": "Tailwind CSS",
+      "img": "https://i.ibb.co.com/9msbFJVB/Tailwind-CSS.png"
+    }
+  ]
+  
