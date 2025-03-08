@@ -34,13 +34,13 @@ export default function Header() {
   );
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-black backdrop-blur-md shadow-md py-4">
+    <header className="sticky border top-0 z-50 bg-black backdrop-blur-md shadow-md py-4">
       <nav className="flex justify-between items-center w-11/12 mx-auto">
         {/* Logo */}
         <div>
           <Link
             to="/"
-            className="logo text-2xl font-extrabold bg-gradient-to-r from-purple-400 via-[#8269b5] to-[#3f217a] bg-clip-text text-transparent cursor-pointer hover:text-purple-800"
+            className="logo md:text-2xl font-extrabold bg-gradient-to-r from-purple-400 via-[#8269b5] to-[#3f217a] bg-clip-text text-transparent cursor-pointer hover:text-purple-800"
           >
             Tasmina
           </Link>
@@ -56,7 +56,7 @@ export default function Header() {
           {/* Download Button */}
           <button className="download cursor-pointer lg:text-lg text-sm lg:gap-2 gap-1 text-white bg-gradient-to-r from-purple-700 to-[#341B66] px-3 py-2 rounded-lg hover:bg-purple-800 transition duration-300">
           <a href="/resume.pdf" className='flex gap-2 cursor-pointer '>
-                <RiDownload2Line className="lg:text-2xl text-lg " />
+                <RiDownload2Line className="lg:text-2xl text-md " />
                 Download CV
             </a>
           </button>

@@ -56,7 +56,7 @@ export default function About() {
             </p>
 
             {/* Skills */}
-            <div className="mt-6 grid sm:grid-cols-3 grid-cols-2 gap-3">
+            <div className="mt-6 grid md:grid-cols-3 grid-cols-2 gap-3">
             {
               skills.map(skill => 
                 <Skills key={skill.id} skill={skill}></Skills>
@@ -70,7 +70,7 @@ export default function About() {
                 <RiDownload2Line className="text-lg" />
                 Download CV
               </a>
-              <a href="https://web.whatsapp.com/+8801581543966" className="flex items-center gap-2 md:px-4 px-3 py-2 bg-transparent border border-purple-600 text-purple-400 rounded-lg text-sm font-medium transition duration-300 hover:bg-purple-600 hover:text-white hover:scale-105 shadow-md">
+              <a href="https://web.whatsapp.com/send?phone=+8801581543966" className="flex items-center gap-2 md:px-4 px-3 py-2 bg-transparent border border-purple-600 text-purple-400 rounded-lg text-sm font-medium transition duration-300 hover:bg-purple-600 hover:text-white hover:scale-105 shadow-md">
                 Contact
                 <MdOutlineArrowOutward className="text-lg" />
               </a>
