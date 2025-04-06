@@ -16,7 +16,7 @@ export default function BannerText() {
           </h2>
 
           {/* Main Heading with Typewriter */}
-          <h1 className="py-4 text-2xl md:text-4xl font-semibold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+          <h1 className="py-4 text-2xl md:text-4xl font-semibold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">
             I Am a Professional{' '}
             <span className="block md:inline md:text-3xl text-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent font-bold">
               <Typewriter
