@@ -11,6 +11,9 @@ body{
     font-family: "Roboto Condensed", serif;
     /* overflow: hidden; */
 }
+.gradient-text {
+    @apply bg-gradient-to-r from-purple-400 via-pink-500 to-red-500  bg-clip-text text-transparent font-bold;
+  }
 /* .radial-gradient {
     background: radial-gradient(circle at 50% 0%, rgba(250, 250, 250, 0.05) 0%, transparent 60%), rgba(15, 15, 15, 1);
 }

@@ -1,48 +1,52 @@
-
 import heroImg from '../assets/model.png'
-import { TypeAnimation } from 'react-type-animation';
-import SocileIcon from './SocileIcon';
-// import ParticlesBg from './Particles/ParticlesBg';
+import { Typewriter } from 'react-simple-typewriter'
+import SocileIcon from './SocileIcon'
 
 export default function BannerText() {
   return (
     <>
-    
-    <div className='w-11/12 mx-auto pt-15 grid md:grid-cols-2 grid-cols-1 justify-center items-center gap-8'>
-      
-      <div className='bg-black py-10 md:text-3xl w-full text-md font-extrabold bg-gradient-to-r from-purple-400 via-[#8047f3] to-[#311960] bg-clip-text text-transparent '>
-        <div className='mb-2'>
-            <h2 className='font-medium  text-md text-gray-300'>WELCOME TO MY WEBSITE</h2>
+      <div className='w-11/12 mx-auto pt-16 grid md:grid-cols-2 grid-cols-1 justify-center items-center gap-8'>
+
+        {/* Text Section */}
+        <div className='py-10 w-full'>
+
+          {/* Welcome Message */}
+          <h2 className='text-md font-medium bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent mb-2'>
+            WELCOME TO MY WEBSITE
+          </h2>
+
+          {/* Main Heading with Typewriter */}
+          <h1 className="py-4 text-2xl md:text-4xl font-semibold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+            I Am a Professional{' '}
+            <span className="block md:inline md:text-3xl text-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent font-bold">
+              <Typewriter
+                words={['Programmer', 'Front-End Developer', 'MERN Stack Developer', 'Web Designer!']}
+                loop={5}
+                cursor
+                cursorStyle='_'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
+          </h1>
+
+          {/* Social Icons */}
+          <SocileIcon />
         </div>
 
-      <TypeAnimation
-      sequence={[
+        {/* Hero Image */}
+        <div className='flex justify-center items-center'>
+          <img
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            src={heroImg}
+            alt="avatar"
+            className='w-full max-w-sm md:max-w-md'
+          />
+        </div>
 
-        "I Am a Parofasonal Programmer",
-        3000, 
-        "I Am a Parofasonal Front-End developer",
-        3000,
-        "I Am a Parofasonal Web Designer",
-        3000,
-        "I Am a Parofasonal MERN-Stack Developer",
-        3000
-      ]}
-      wrapper="span"
-      speed={50}
-      style={{ fontSize: '2em', display: 'inline-block' }}
-      repeat={Infinity}
-    />
-
-      <SocileIcon />
-      
-    </div>
-
-      <div className='block items-center mx-auto'>
-        <img  data-aos="fade-up"
-          data-aos-duration="2000" src={heroImg} className='w-full items-end ring-0' alt="avata" />
       </div>
-
-    </div>
     </>
   )
 }
