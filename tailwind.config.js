@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['InterVariable', '...defaultTheme.fontFamily.sans'],
+        sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         bodyColor: "#212428",
@@ -15,7 +15,10 @@ module.exports = {
       boxShadow: {
         shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
       },
+      backgroundImage: {
+        contactImg: "url('/contact.jpg')",
+      },
     },
-},
-plugins: [],
-};
+  },
+  plugins: [],
+}

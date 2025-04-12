@@ -1,58 +1,9 @@
 
-// import messageLottieData from '../assets/message.json' 
-// import Lottie from 'lottie-react'
 import { Helmet } from 'react-helmet'
 
-// export default function Contact() {
-//   return (
-//     <>
-//     <Helmet>
-//         <title>Tasmina || Contact </title>
-//     </Helmet>
-
-//     <div className='w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d] to-75%'>
-//       <div className=' w-10/11 mx-auto pt-16 pb-10'>
-//         <h2 data-aos="fade-up"
-//      data-aos-duration="3000" className='bg-gradient-to-br from-purple-600 to-[#6642ad] bg-clip-text text-transparent font-bold text-center sm:text-6xl text-2xl'>Contact With Me</h2>
-
-//         <p className='text-gray-100 text-center font-medium md:text-xl text-md mt-2'>
-//           I'd love hear from your! If yor have any questions, commenta, or feedBack, Please use the form below.
-//         </p>
-
-//   <div className='grid md:grid-cols-2 grid-cols-1 gap-10 justify-center items-center'>
-//     {/* lottie  */}
-//   <div className='mt-4 w-2/3 bg-transparent'> 
-//      <Lottie animationData={messageLottieData} ></Lottie>
-//   </div>
-
-//   {/* Form  */}
-//   <div>
-//   <form className='w-full mt-4 py-10'>
-
-// <div className='flex gap-6 w-full '>
-//   <input type="text" placeholder='Enter your name' className='w-full px-4 py-4 rounded-md outline-0 border border-white text-white' />
-  
-//   <input type="email" placeholder='Enter your email' className='w-full px-4 py-4 rounded-md outline-0 border border-white text-white' />
-//  </div>
-
-//     <textarea name="text" id="" rows="10" placeholder='Message' className='w-full my-6 text-white outline-0 border px-4 py-4 rounded-md border-white'>
-//     </textarea>
-//   <input type="submit" value="Submit" className='h-14 bg-linear-to-bl from-[#20123d] to-purple-600 text-white text-lg w-full py-4 rounded-xl' />
-
-//   </form>
-//   </div>
-
-
-//   </div>
-
-//       </div>
-//     </div>
-    
-//     </>
-//   )
-// }
-
 import React, { useState } from "react";
+import { FaLocationDot, FaPhoneVolume } from 'react-icons/fa6';
+import { MdOutlineMail } from 'react-icons/md';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -100,87 +51,111 @@ const Contact = () => {
 
   return (
     <>
-    <Helmet>
-      <title>Tasmina || Contact </title>
-    </Helmet>
+      <Helmet>
+        <title>Tasmina || Contact </title>
+      </Helmet>
 
-    <section id="contact" className="py-16 bg-gradient-to-tr from-black to-[#20123d] to-75%">
-      <h1 className="bg-gradient-to-r from-purple-400 to-[#341B66] bg-clip-text text-transparent font-bold duration-300 transition-all text-center sm:text-6xl text-2xl mb-10">
-      Contact Me
-      </h1>
+      <section className="relative py-10 bg-cover bg-center min-h-screen"
+        style={{ backgroundImage: "url('/contact.jpg')" }}
+      >
+        {/* Overlay for dark shadow effect */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-      <div className="flex flex-wrap justify-center items-start gap-10 max-w-7xl mx-auto">
-        {/* Contact Info */}
-        <div className="flex-1 bg-[#2c2c2cc0] shadow-lg rounded-lg p-6">
-          <h3 className="text-2xl font-semibold text-gray-200 mb-6 uppercase">
-            Contact Info
-          </h3>
-          <div className="space-y-4">
-            <h3 className="flex items-center text-lg text-gray-400">
-              {/* <i className="fas fa-envelope text-green-500 mr-4"></i> */}
-              wptasmina@gmail.com
-            </h3>
-            <h3 className="flex items-center text-lg text-gray-400">
-              {/* <i className="fas fa-phone text-green-500 mr-4"></i> */}
-              +880-123456788
-            </h3>
-            <h3 className="flex items-center text-lg text-gray-400">
-              {/* <i className="fas fa-phone text-green-500 mr-4"></i> */}
-              +880-124597575
-            </h3>
-            <h3 className="flex items-center text-lg text-gray-400">
-              {/* <i className="fas fa-map-marker-alt text-green-500 mr-4"></i> */}
-              California, USA - 606543
-            </h3>
-          </div>
+        {/* Content with higher z-index */}
+        <div className="relative pb-6 z-10">
+          <h1 className="text-4xl font-bold text-center text-purple-700">
+            Contact Us
+          </h1>
         </div>
+        {/* Contact Info and Contact from */}
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 grid-cols-1 md:gap-10 relative z-10">
+          {/* Contact Info */}
+          <div className="flex flex-col justify-center items-center bg-transparent shadow-lg rounded-lg py-16 lg:px-10 px-4">
+            <h3 className="text-2xl font-semibold text-gray-300 mb-6 uppercase">
+              Contact Info
+            </h3>
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <p className="flex justify-center items-center text-lg bg-gray-100 w-10 h-10 rounded-full">
+                  <FaLocationDot className='text-purple-800' />
+                </p>
+                <div>
+                  <p className="flex items-center text-lg text-purple-800">Address</p>
+                  <p className="flex items-center text-lg text-gray-400">Sylhet, Bangladesh - 3100</p>
+                </div>
+              </div>
+              {/* Phone  */}
+              <div className="flex gap-4">
+                <p className="flex justify-center items-center text-lg bg-gray-100 w-10 h-10 rounded-full">
+                <FaPhoneVolume className='text-purple-800' />
+                </p>
+                <div>
+                  <p className="flex items-center text-lg text-purple-800">Phone</p>
+                  <p className="flex items-center text-lg text-gray-400">+880-1581543966</p>
+                </div>
+              </div>
+              {/* Email  */}
+              <div className="flex gap-4">
+                <p className="flex justify-center items-center text-lg bg-gray-100 w-10 h-10 rounded-full">
+                <MdOutlineMail className='text-purple-800' />
+                </p>
+                <div>
+                  <p className="flex items-center text-lg text-purple-800">Email</p>
+                  <p className="flex items-center text-lg text-gray-400">tasmina163@gmail.com</p>
+                </div>
+              </div>
 
-        {/* Contact Form */}
-        <form
-          className="flex-1 bg-[#2c2c2cc0] shadow-lg rounded-lg p-6 max-w-xl"
-          onSubmit={handleSubmit}
-        >
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-            className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2  focus:ring-blue-950"
-          />
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Your Email"
-            className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950"
-          />
-          <input
-            type="text"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            placeholder="Subject"
-            className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950"
-          />
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Your Message"
-            className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950"
-            rows="6"
-          ></textarea>
-          <button
-            type="submit"
-            className="w-full p-3 bg-linear-to-bl from-[#20123d] to-purple-600 text-white text-lg font-bold rounded-lg shadow-md cursor-pointer "
+            </div>
+          </div>
+
+          {/* Contact Form */}
+         <div className='flex flex-col justify-center items-center'>
+         <form
+            className="bg-gray-950 shadow-lg rounded-lg p-6 max-w-xl z-10 relative"
+            onSubmit={handleSubmit}
           >
-            Send Message
-          </button>
-        </form>
-      </div>
-    </section>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your Name"
+              className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2  focus:ring-blue-950"
+            />
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Your Email"
+              className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950"
+            />
+            <input
+              type="text"
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
+              placeholder="Subject"
+              className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950"
+            />
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Your Message"
+              className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950"
+              rows="6"
+            ></textarea>
+            <button
+              type="submit"
+              className="w-full p-3 bg-linear-to-bl from-[#20123d] to-purple-600 text-white text-lg font-bold rounded-lg shadow-md cursor-pointer "
+            >
+              Send Message
+            </button>
+          </form>
+         </div>
+        </div>
+      </section>
     </>
   );
 };
