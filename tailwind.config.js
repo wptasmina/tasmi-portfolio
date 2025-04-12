@@ -15,9 +15,6 @@ module.exports = {
       boxShadow: {
         shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
       },
-      backgroundImage: {
-        contactImg: "url('/contact.jpg')",
-      },
     },
   },
   plugins: [],

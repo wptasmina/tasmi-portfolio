@@ -7,27 +7,27 @@ import { Link, NavLink } from 'react-router-dom';
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItemClass = 'text-white font-medium lg:text-lg text-sm transition duration-300 hover:text-purple-500'
+  const navItemclassName = 'text-white font-medium lg:text-lg text-sm transition duration-300 hover:text-purple-500'
 
   const navItems = (
     <>
-       <li className={navItemClass}>
+       <li className={navItemclassName}>
         <NavLink to="/">
           Home
         </NavLink>
       </li>
 
-      <li className={navItemClass}>
+      <li className={navItemclassName}>
         <NavLink to="/about-me">About Me</NavLink>
       </li>
 
-      <li className={navItemClass}>
+      <li className={navItemclassName}>
         <NavLink to="/skills">Skills</NavLink>
       </li>
-      <li className={navItemClass}>
-        <NavLink to="/projects">Projects</NavLink>
+      <li className={navItemclassName}>
+        <NavLink to="/my-projects">My Projects</NavLink>
       </li>
-      <li className={navItemClass}>
+      <li className={navItemclassName}>
         <NavLink to="/contact">Contact Me</NavLink>
       </li>
     </>

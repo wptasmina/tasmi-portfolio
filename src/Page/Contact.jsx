@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import React, { useState } from "react";
 import { FaLocationDot, FaPhoneVolume } from 'react-icons/fa6';
 import { MdOutlineMail } from 'react-icons/md';
+import Title from '../Layout/Title';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -67,6 +68,7 @@ const Contact = () => {
             Contact Us
           </h1>
         </div>
+        
         {/* Contact Info and Contact from */}
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 grid-cols-1 md:gap-10 relative z-10">
           {/* Contact Info */}
