@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5';
 import { RiDownload2Line } from 'react-icons/ri';
@@ -54,7 +54,7 @@ export default function Header() {
         {/* CV Download & Toggle Button */}
         <div className="flex gap-4 items-center">
           {/* Download Button */}
-          <button className="download cursor-pointer lg:text-lg text-sm lg:gap-2 gap-1 text-white bg-gradient-to-r from-purple-700 to-[#341B66] px-3 py-2 rounded-lg hover:bg-purple-800 transition duration-300">
+          <button className="download cursor-pointer text-shadow-md lg:text-lg text-sm lg:gap-2 gap-1 text-white bg-gradient-to-r from-purple-400 to-[#341B66] px-3 py-2 rounded-lg hover:bg-purple-800 transition duration-300">
           <a href="/resume.pdf" className='flex gap-2 cursor-pointer '>
                 <RiDownload2Line className="lg:text-2xl text-md " />
                 Download CV

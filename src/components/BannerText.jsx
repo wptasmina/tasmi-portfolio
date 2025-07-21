@@ -19,13 +19,13 @@ export default function BannerText() {
 
         {/* Text Section */}
         <div className="py-10 w-full">
-          <h2 className="text-md font-medium bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent mb-2">
+          <h2 className="text-md font-medium text-shadow-md bg-gradient-to-r from-purple-400 to-[#2e1463] bg-clip-text text-transparent mb-2">
             WELCOME TO MY WEBSITE
           </h2>
 
-          <h1 className="py-4 text-2xl md:text-4xl font-semibold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">
+          <h1 className="py-4 text-2xl md:text-4xl font-semibold text-shadow-md bg-gradient-to-r from-purple-400 to-[#2e1463] bg-clip-text text-transparent">
             I Am a Professional{' '}
-            <span className="block md:inline md:text-3xl text-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent font-bold">
+            <span className="block md:inline md:text-3xl text-2xl bg-gradient-to-r from-purple-500 to-[#2e1463] bg-clip-text text-transparent font-bold">
               <Typewriter
                 words={['Programmer', 'Front-End Developer', 'MERN Stack Developer', 'Web Designer!']}
                 loop={5}

@@ -26,7 +26,7 @@ export default function ParticlesBg() {
                     className="absolute inset-0"
                     options={{
                         fullScreen: { enable: false },
-                        fpsLimit: 120,
+                        fpsLimit: 220,
                         interactivity: {
                             events: {
                                 onClick: { enable: true, mode: "push" },
