@@ -1,45 +1,45 @@
-import React, { useState, useRef } from "react";
-import { Helmet } from 'react-helmet';
-import emailjs from '@emailjs/browser';
-import { FaLocationDot, FaPhoneVolume } from 'react-icons/fa6';
-import { MdOutlineMail } from 'react-icons/md';
+import { useState, useRef } from "react";
+import { Helmet } from "react-helmet";
+import emailjs from "@emailjs/browser";
+import { FaLocationDot, FaPhoneVolume } from "react-icons/fa6";
+import { MdOutlineMail } from "react-icons/md";
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+const sendEmail = (e) => {
+  e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_vbf7adi',     //  Your Service ID
-        'template_9p64etd',    //  Your Template ID
-        form.current,
-        {
-          publicKey: 'oRXTPmkVJkmwyuwrT', //  Your Public Key
-        }
-      )
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          setName('');
-          setEmail('');
-          setSubject('');
-          setMessage('');
-          alert('Message sent successfully!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-          alert('Something went wrong. Please try again.');
-        }
-      );
-      reset()
-  };
+  emailjs
+    .sendForm(
+      "service_vbf7adi",
+      "template_9p64etd",
+      form.current,
+      {
+        publicKey: "oRXTPmkVJkmwyuwrT",
+      }
+    )
+    .then(
+      () => {
+        console.log("SUCCESS!");
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+        alert("Message sent successfully!");
+        form.current.reset(); // ✅ Native reset
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+        alert("Something went wrong. Please try again.");
+      }
+    );
+};
 
   return (
     <>
@@ -54,7 +54,7 @@ const Contact = () => {
         <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="relative pb-6 z-10">
-          <h1 className="text-4xl font-bold text-center text-purple-700">
+          <h1 className="sm:text-3xl text-2xl title-font mb-2 text-white text-shadow-lg font-bold text-center">
             Contact Us
           </h1>
         </div>
@@ -68,16 +68,18 @@ const Contact = () => {
             <div className="space-y-4">
               <div className="flex gap-4">
                 <p className="flex justify-center items-center text-lg bg-gray-100 w-10 h-10 rounded-full">
-                  <FaLocationDot className='text-purple-800' />
+                  <FaLocationDot className="text-purple-800" />
                 </p>
                 <div>
                   <p className="text-lg text-purple-800">Address</p>
-                  <p className="text-lg text-gray-400">Sylhet, Bangladesh - 3100</p>
+                  <p className="text-lg text-gray-400">
+                    Sylhet, Bangladesh - 3100
+                  </p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <p className="flex justify-center items-center text-lg bg-gray-100 w-10 h-10 rounded-full">
-                  <FaPhoneVolume className='text-purple-800' />
+                  <FaPhoneVolume className="text-purple-800" />
                 </p>
                 <div>
                   <p className="text-lg text-purple-800">Phone</p>
@@ -86,7 +88,7 @@ const Contact = () => {
               </div>
               <div className="flex gap-4">
                 <p className="flex justify-center items-center text-lg bg-gray-100 w-10 h-10 rounded-full">
-                  <MdOutlineMail className='text-purple-800' />
+                  <MdOutlineMail className="text-purple-800" />
                 </p>
                 <div>
                   <p className="text-lg text-purple-800">Email</p>
@@ -97,11 +99,11 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className='flex flex-col justify-center items-center'>
+          <div className="flex flex-col justify-center items-center min-h-screen px-4">
             <form
               ref={form}
               onSubmit={sendEmail}
-              className="bg-gray-950 shadow-lg rounded-lg p-6 max-w-xl z-10 relative w-full"
+              className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl rounded-xl p-6 max-w-xl w-full z-10"
             >
               <input
                 type="text"
@@ -109,7 +111,7 @@ const Contact = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Your Name"
-                className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950"
+                className="w-full p-3 mb-4 bg-transparent text-gray-300 border border-gray-600 rounded-lg shadow-sm focus:outline-none "
                 required
               />
               <input
@@ -118,7 +120,7 @@ const Contact = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your Email"
-                className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950"
+                className="w-full p-3 mb-4 bg-transparent text-gray-300 border border-gray-600 rounded-lg shadow-sm focus:outline-none"
                 required
               />
               <input
@@ -127,7 +129,7 @@ const Contact = () => {
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
                 placeholder="Subject"
-                className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950"
+                className="w-full p-3 mb-4 bg-transparent text-gray-300 border border-gray-600 rounded-lg shadow-sm focus:outline-none"
                 required
               />
               <textarea
@@ -135,13 +137,13 @@ const Contact = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Your Message"
-                className="w-full p-3 mb-4 bg-transparent text-gray-400 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950"
+                className="w-full p-3 mb-4 bg-transparent text-gray-300 border border-gray-600 rounded-lg shadow-sm focus:outline-none"
                 rows="6"
                 required
               ></textarea>
               <button
                 type="submit"
-                className="w-full p-3 bg-gradient-to-bl from-[#20123d] to-purple-600 text-white text-lg font-bold rounded-lg shadow-md cursor-pointer"
+                className="w-full p-3 bg-gradient-to-bl from-[#4b3e6e] to-[#2b0e66] text-white text-lg font-bold rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer"
               >
                 Send Message
               </button>

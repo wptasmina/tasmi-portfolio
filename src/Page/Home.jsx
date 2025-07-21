@@ -1,5 +1,10 @@
 import { Helmet } from "react-helmet";
 import BannerText from "../components/BannerText";
+import About from "./About";
+import MyProjects from "./MyProjects";
+import Skills from "./Skills";
+import Contact from "./Contact";
+
 
 
 export default function Home() {
@@ -10,6 +15,11 @@ export default function Home() {
     </Helmet>
 
     <BannerText />
+
+    <About />
+    <MyProjects />
+    <Skills />
+    <Contact />
 
     </>
   )

@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { AiFillHtml5, AiOutlineJavaScript } from "react-icons/ai";
+import { AiOutlineJavaScript } from "react-icons/ai";
 import { IoLogoNodejs, IoLogoReact } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
@@ -18,7 +18,7 @@ export default function Skills() {
   <div className="text-gray-600 w-11/12 mx-auto">
   {/* <div className=""> */}
     <div className="flex flex-wrap w-full mb-10 flex-col items-center text-center">
-      <h1 data-aos="zoom-in" className="sm:text-3xl text-2xl title-font mb-2 bg-gradient-to-r from-purple-400 to-[#341B66] bg-clip-text text-transparent font-bold pt-16">Skills</h1>
+      <h1 data-aos="zoom-in" className="sm:text-3xl text-2xl title-font mb-2 bg-gradient-to-r from-purple-400 to-[#341B66] text-shadow-lg bg-clip-text text-transparent font-bold pt-16">Skills</h1>
     </div>
     <div className="grid md:grid-cols-3 grid-cols-1 gap-4 w-full bg-blue-black/90 rounded-2xl py-8 backdrop-blur-3xl">
 
@@ -53,7 +53,7 @@ export default function Skills() {
           <SiMongodb className="text-2xl" />
           </div>
           <h2 className="text-lg text-gray-400 font-medium title-font mb-2">MongoDB</h2>
-          <p className="leading-relaxed text-base">MongoDB is a NoSQL database, meaning it doesn't use the traditional relational database model (which organizes data into tables with rows and columns).</p>
+          <p className="leading-relaxed text-base">MongoDB is a NoSQL database, meaning it doesn&apos;t use the traditional relational database model (which organizes data into tables with rows and columns).</p>
         </div>
 
         <div data-aos="fade-right"

@@ -11,7 +11,7 @@ export default function BannerText() {
       <div className="absolute inset-0 -z-10">
         <ParticlesBg />
         {/* Optional dark overlay to increase contrast */}
-        {/* <div className="absolute inset-0 bg-black/30"></div> */}
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
       {/* 🔴 Foreground content */}
@@ -24,10 +24,10 @@ export default function BannerText() {
           </h2>
 
           <h1 className="py-4 text-2xl md:text-4xl font-semibold text-shadow-md bg-gradient-to-r from-purple-400 to-[#2e1463] bg-clip-text text-transparent">
-            I Am a Professional{' '}
-            <span className="block md:inline md:text-3xl text-2xl bg-gradient-to-r from-purple-500 to-[#2e1463] bg-clip-text text-transparent font-bold">
+            I Am a Professional
+            <span className="ml-2 block md:inline md:text-3xl text-2xl bg-gradient-to-r from-purple-500 to-[#2e1463] bg-clip-text text-transparent font-bold">
               <Typewriter
-                words={['Programmer', 'Front-End Developer', 'MERN Stack Developer', 'Web Designer!']}
+                words={['_','Programmer', 'Front-End Developer', 'MERN Stack Developer', 'Web Designer!']}
                 loop={5}
                 cursor
                 cursorStyle="_"
