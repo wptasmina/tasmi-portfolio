@@ -1,7 +1,7 @@
-import React from "react";
+
 import { BsArrowLeft } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import P2 from "../../assets/project2.png";
+import P2 from "../../assets/project2.webp";
 
 function Project2() {
   return (
@@ -47,7 +47,7 @@ function Project2() {
   <strong>✨ Key Features:</strong>
 </p>
 <ul className="ml-6">
-  <li>✅ Secure Login & Signup – Email/password-based authentication</li>
+ <li>✅ Secure Login & Signup – Email/password-based authentication</li>
   <li>✅ Social Login – Google authentication integration</li>
   <li>✅ JWT Protection – Secure private routes with JSON Web Token (JWT)</li>
   <li>✅ Dynamic Blog Management – Create, update, comment, and manage blogs effortlessly</li>
@@ -72,7 +72,7 @@ function Project2() {
 
 <p className="text-lg mt-2">
   <strong>🚀 Future Plans:</strong>  
-  Galaxy Blogger is continuously evolving! Here's what’s next:
+  Galaxy Blogger is continuously evolving! Here&apos;s what&apos;s next:
 </p>
 <ul className="ml-6">
   <li>✨ Dark Mode – A user-friendly toggle for night-time reading</li>

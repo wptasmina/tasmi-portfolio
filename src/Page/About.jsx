@@ -1,6 +1,6 @@
 import { RiDownload2Line } from 'react-icons/ri';
 import { MdOutlineArrowOutward } from 'react-icons/md';
-import aboutImg from '../assets/about.jpg';
+import aboutImg from '../assets/about.webp';
 import { Helmet } from 'react-helmet';
 import { useEffect, useState } from 'react';
 import SkillsAbout from '../components/SkillsAbout';

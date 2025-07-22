@@ -1,6 +1,6 @@
 import { BsArrowLeft } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import P3 from "../../assets/project3.png";
+import P3 from "../../assets/project3.webp";
 
 function Project3() {
   return (
