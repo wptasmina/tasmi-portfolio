@@ -23,7 +23,7 @@ export default function About() {
         <title>Tasmina || About</title>
       </Helmet>
 
-      <div className="w-full min-h-screen bg-gradient-to-br from-black via-[#1a0e30] to-[#120b24] flex flex-col items-center md:pb-10">
+      <div className="w-full min-h-screen bg-gradient-to-br from-black via-[#1a0e30] to-[#120b24] flex flex-col items-center md:pb-10 overflow-hidden">
 
         {/* Heading Section */}
         <div className="w-11/12 text-center py-10">

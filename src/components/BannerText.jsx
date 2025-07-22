@@ -43,7 +43,7 @@ export default function BannerText() {
         </div>
 
         {/* ✅ Lottie Animation instead of image */}
-        <div className="md:flex justify-center items-center hidden">
+        <div className="md:flex justify-center items-center hidden ">
           <Lottie
             animationData={codingAnimation}
             loop={true}

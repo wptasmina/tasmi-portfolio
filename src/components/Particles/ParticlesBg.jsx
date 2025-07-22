@@ -39,7 +39,7 @@ export default function ParticlesBg() {
                             },
                         },
                         particles: {
-                            color: { value: "#8750F7" },
+                            color: { value: "#9478ce" },
                             move: {
                                 direction: "none",
                                 enable: true,
@@ -50,7 +50,7 @@ export default function ParticlesBg() {
                             },
                             number: {
                                 density: { enable: true, area: 800 },
-                                value: 20,
+                                value: 60,
                             },
                             opacity: { value: 0.5 },
                             shape: { type: "circle" },

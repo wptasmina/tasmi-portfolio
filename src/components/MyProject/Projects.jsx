@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-gradient-to-tr from-black to-[#20123d] to-75% pt-4 pb-10 border-b-[1px] border-b-black"
+      className="bg-gradient-to-tr from-black to-[#20123d] to-75% pt-4 pb-10 border-b-[1px] border-b-black overflow-hidden"
     >
       <div className="w-11/12 mx-auto">
         <div className="flex justify-center items-center text-center">

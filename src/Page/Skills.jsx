@@ -14,13 +14,13 @@ export default function Skills() {
         <title>Tasmina || Skills</title>
     </Helmet>
 
-<section className='w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d] to-75% pb-12'>
+<section className='w-full min-h-screen bg-gradient-to-tr from-black to-[#20123d] to-75% pb-12 overflow-hidden'>
   <div className="text-gray-600 w-11/12 mx-auto">
   {/* <div className=""> */}
     <div className="flex flex-wrap w-full mb-10 flex-col items-center text-center">
       <h1 data-aos="zoom-in" className="sm:text-3xl text-2xl title-font mb-2 bg-gradient-to-r from-purple-400 to-[#341B66] text-shadow-lg bg-clip-text text-transparent font-bold pt-16">Skills</h1>
     </div>
-    <div className="grid md:grid-cols-3 grid-cols-1 gap-4 w-full bg-blue-black/90 rounded-2xl py-8 backdrop-blur-3xl">
+    <div className="grid md:grid-cols-3 grid-cols-1 gap-4 w-full  rounded-2xl py-8 ">
 
         <div data-aos="fade-up-right" data-aos-duration="2000" className="border h-70 border-gray-200 p-6 rounded-lg">
           <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#EFD81D] mb-4">
