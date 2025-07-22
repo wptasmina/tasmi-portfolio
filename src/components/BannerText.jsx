@@ -1,23 +1,23 @@
-import heroImg from '../assets/model.png';
 import { Typewriter } from 'react-simple-typewriter';
 import SocileIcon from './SocileIcon';
 import ParticlesBg from './Particles/ParticlesBg';
+import Lottie from 'lottie-react';
+import codingAnimation from '../assets/lottie/lottie.json'; // 🟡 Your Lottie file
 
 export default function BannerText() {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
+    <div className="relative w-full overflow-hidden">
 
       {/* 🔵 Background Particles */}
       <div className="absolute inset-0 -z-10">
         <ParticlesBg />
-        {/* Optional dark overlay to increase contrast */}
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
       {/* 🔴 Foreground content */}
       <div className="w-11/12 mx-auto pt-16 grid md:grid-cols-2 grid-cols-1 justify-center items-center gap-8">
 
-        {/* Text Section */}
+        {/* 📝 Text Section */}
         <div className="py-10 w-full">
           <h2 className="text-md font-medium text-shadow-md bg-gradient-to-r from-purple-400 to-[#2e1463] bg-clip-text text-transparent mb-2">
             WELCOME TO MY WEBSITE
@@ -38,18 +38,16 @@ export default function BannerText() {
             </span>
           </h1>
 
-          {/* Social Icons */}
+          {/* 🌐 Social Icons */}
           <SocileIcon />
         </div>
 
-        {/* Hero Image */}
-        <div className="flex justify-center items-center">
-          <img
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            src={heroImg}
-            alt="avatar"
-            className="w-full max-w-sm md:max-w-md"
+        {/* ✅ Lottie Animation instead of image */}
+        <div className="md:flex justify-center items-center hidden">
+          <Lottie
+            animationData={codingAnimation}
+            loop={true}
+            className="w-72 md:w-96"
           />
         </div>
 
